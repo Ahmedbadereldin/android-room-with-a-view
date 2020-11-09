@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright 2017 Google Inc.
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright 2017 Google Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,14 +13,24 @@ See the License for the specific language governing permissions and
 limitations under the License. -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView"
         style="@style/word_title"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewDetails"
+        style="@style/word_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_light" />
+        android:ellipsize="end"
+        android:singleLine="true" />
+
 </LinearLayout>
